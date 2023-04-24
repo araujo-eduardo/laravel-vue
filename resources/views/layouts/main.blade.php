@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,19 +13,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="antialiased">7
-    <header>
-        <nav class="">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/products">Produtos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Meu SITE em Laravel e Vue</h1>
-    </main>
-    <footer></footer>
+<body class="antialiased">
+    @yield('content')
 </body>
 
 </html>
